@@ -1,2 +1,2 @@
-From k8s.gcr.io/ingress-nginx/controller:v1.1.2
-# ImageName=ingress-controller:v1.1.2
+From k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
+# ImageName=kube-webhook-certgen:v1.1.1
