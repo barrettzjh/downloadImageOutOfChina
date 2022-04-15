@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/library/`grep "^#"|awk '{print $NF}'`:$(date +%s) && docker push registry.cn-hangzhou.aliyuncs.com/library/`grep "^#"|awk '{print $NF}'`:$(date +%s)
+      run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/library/`grep "^#" Dockerfile|awk '{print $NF}'`:$(date +%s) && docker push registry.cn-hangzhou.aliyuncs.com/library/`grep "^#" Dockerfile|awk '{print $NF}'`:$(date +%s)
