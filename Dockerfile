@@ -1,2 +1,2 @@
-From k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
-# ImageName=kube-webhook-certgen:v1.1.1
+From ibm-semeru-runtimes:open-8u332-b09-jdk
+# ImageName=ibm-semeru-runtimes:open-8u332-b09-jdk
