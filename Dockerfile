@@ -1,2 +1,2 @@
-From gcr.io/google-samples/microservices-demo/paymentservice:v0.3.8
-# ImageName=paymentservice:v0.3.8
+From gcr.io/google-samples/microservices-demo/productcatalogservice:v0.3.8
+# ImageName=productcatalogservice:v0.3.8
