@@ -1,2 +1,2 @@
-From ibm-semeru-runtimes:open-11.0.15_10-jdk
-# ImageName=ibm-semeru-runtimes:open-11.0.15_10-jdk
+From gcr.io/google-samples/microservices-demo/emailservice:v0.3.8
+# ImageName=emailservice:v0.3.8
