@@ -1,2 +1,2 @@
-From quay.io/prometheus/node-exporter:v1.1.2
-# ImageName=node-exporter:v1.1.2
+From quay.io/prometheus/alertmanager:v0.21.0
+# ImageName=alertmanager:v0.21.0
