@@ -1,2 +1,2 @@
-From quay.io/prometheus/alertmanager:v0.21.0
-# ImageName=alertmanager:v0.21.0
+From quay.io/brancz/kube-rbac-proxy:v0.8.0
+# ImageName=kube-rbac-proxy:v0.8.0
