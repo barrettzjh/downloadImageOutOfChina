@@ -1,2 +1,2 @@
-From quay.io/prometheus/prometheus:v2.26.0
-# ImageName=prometheus:v2.26.0
+From quay.io/prometheus-operator/prometheus-config-reloader:v0.47.0
+# ImageName=prometheus-config-reloader:v0.47.0
