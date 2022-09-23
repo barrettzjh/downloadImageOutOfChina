@@ -1,2 +1,2 @@
-From k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-# ImageName=kube-state-metrics:v2.0.0
+From ghcr.io/open-telemetry/opentelemetry-operator/opentelemetry-operator:0.60.0
+# ImageName=opentelemetry-operator:0.60.0
