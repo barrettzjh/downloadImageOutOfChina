@@ -1,2 +1,2 @@
-From ghcr.io/open-telemetry/opentelemetry-operator/opentelemetry-operator:0.60.0
-# ImageName=opentelemetry-operator:0.60.0
+From k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+# ImageName=nfs-subdir-external-provisioner:v4.0.2
