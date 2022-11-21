@@ -1,2 +1,2 @@
-From rabbitmqoperator/cluster-operator:2.0.0
-# ImageName=cluster-operator:2.0.0
+From rabbitmq:3.10.2-management
+# ImageName=rabbitmq:3.10.2-management
