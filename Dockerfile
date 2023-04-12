@@ -1,2 +1,2 @@
-From gcr.io/kubebuilder/kube-rbac-proxy:v0.13.0
-# ImageName=kube-rbac-proxy:v0.13.0
+From ghcr.io/open-telemetry/opentelemetry-operator/opentelemetry-operator:0.74.0
+# ImageName=opentelemetry-operator:0.74.0
