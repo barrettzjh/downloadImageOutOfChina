@@ -1,2 +1,2 @@
-From k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0
-# ImageName=kube-state-metrics:v2.3.0
+From ghcr.io/fleeksoft/hbase/hdfs:3.3.3.2
+# ImageName=hdfs:3.3.3.2
