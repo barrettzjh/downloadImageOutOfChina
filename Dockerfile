@@ -1,2 +1,2 @@
-From ghcr.io/fleeksoft/hbase/hdfs:3.3.3.2
-# ImageName=hdfs:3.3.3.2
+From ghcr.io/fleeksoft/hbase/hbase-base:2.4.13.2
+# ImageName=hbase-base:2.4.13.2
