@@ -1,2 +1,2 @@
-From grafana/loki:2.8.0
-# ImageName=loki:2.8.0
+From nginxinc/nginx-unprivileged:1.20.2-alpine
+# ImageName=nginx-unprivileged:1.20.2-alpine
