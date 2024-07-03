@@ -1,2 +1,2 @@
-From ghcr.io/fleeksoft/hbase/hbase-base:2.4.13.2
-# ImageName=hbase-base:2.4.13.2
+From grafana/loki:2.8.0
+# ImageName=loki:2.8.0
