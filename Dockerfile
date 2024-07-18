@@ -1,2 +1,2 @@
-From otel/opentelemetry-collector-contrib:0.98.0
-# ImageName=opentelemetry-collector-contrib:0.98.0
+From labring/kubernetes-docker:v1.25.0-arm64
+# ImageName=kubernetes-docker:v1.25.0-arm64
