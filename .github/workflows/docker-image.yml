@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: ALIYUN_USERNAME  # 指定使用 Environment 配置
     steps:
     - uses: actions/checkout@v3
 
