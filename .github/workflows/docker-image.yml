@@ -7,12 +7,51 @@ on:
     branches: [ main ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker login -uzjh0828 -pzjhA8023 registry.cn-hangzhou.aliyuncs.com && docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/zhangjinhui/`grep "^#" Dockerfile|awk -F"=" '{print $NF}'` && docker push registry.cn-hangzhou.aliyuncs.com/zhangjinhui/`grep "^#" Dockerfile|awk -F"=" '{print $NF}'`
+
+    - name: Login to Alibaba Cloud Registry
+      run: echo "${{ secrets.ALIYUN_PASSWORD }}" | docker login -u ${{ secrets.ALIYUN_USERNAME }} --password-stdin registry.cn-hangzhou.aliyuncs.com
+
+    - name: Pull and Push Images
+      run: |
+        # 读取 images.txt 中的镜像列表，格式: 源镜像名=目标镜像名(可选)
+        # 示例:
+        # labring/kubernetes-docker:v1.29.5-arm64
+        # nginx:latest=my-nginx:latest
+        while IFS= read -r line || [[ -n "$line" ]]; do
+          # 跳过空行和注释行
+          [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
+          
+          # 解析源镜像和目标镜像
+          if [[ "$line" == *"="* ]]; then
+            source_image="${line%%=*}"
+            target_image="${line#*=}"
+          else
+            source_image="$line"
+            target_image="$line"
+          fi
+          
+          # 去除前后空格
+          source_image=$(echo "$source_image" | xargs)
+          target_image=$(echo "$target_image" | xargs)
+          
+          echo "========================================"
+          echo "正在处理镜像: $source_image"
+          echo "目标镜像: registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
+          echo "========================================"
+          
+          # 拉取源镜像
+          docker pull "$source_image"
+          
+          # 重新标记镜像
+          docker tag "$source_image" "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
+          
+          # 推送到阿里云
+          docker push "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
+          
+          echo "镜像 $source_image 处理完成"
+          echo ""
+        done < images.txt
