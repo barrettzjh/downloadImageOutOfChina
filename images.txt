@@ -4,7 +4,7 @@
 # ============================================
 
 # 示例 1: 直接同步，目标镜像名与源镜像相同
-labring/kubernetes-docker:v1.29.5-arm64
+# labring/kubernetes-docker:v1.29.5-arm64
 
 # 示例 2: 自定义目标镜像名
 # nginx:latest=my-nginx:latest
