@@ -39,6 +39,12 @@ jobs:
           source_image=$(echo "$source_image" | xargs)
           target_image=$(echo "$target_image" | xargs)
           
+          # 提取镜像名（去掉命名空间前缀）
+          # 例如: labring/kubernetes-docker:v1.29.5-arm64 → kubernetes-docker:v1.29.5-arm64
+          if [[ "$target_image" == *"/"* ]]; then
+            target_image="${target_image##*/}"
+          fi
+          
           echo "========================================"
           echo "正在处理镜像: $source_image"
           echo "目标镜像: registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
