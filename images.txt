@@ -13,3 +13,9 @@ labring/kubernetes-docker:v1.29.5-arm64
 # busybox:latest
 # alpine:latest
 # redis:7-alpine
+
+
+
+busybox:latest
+alpine:latest
+redis:7-alpine
