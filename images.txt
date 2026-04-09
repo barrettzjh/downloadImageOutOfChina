@@ -19,3 +19,5 @@
 busybox:latest
 alpine:latest
 redis:7-alpine
+nginx:1.18
+nginx:1.20
