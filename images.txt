@@ -21,3 +21,9 @@ alpine:latest
 redis:7-alpine
 nginx:1.18
 nginx:1.20
+reg.kyverno.io/kyverno/kyvernopre:v1.17.1=kyvernopre:v1.17.1
+reg.kyverno.io/kyverno/kyverno:v1.17.1=kyverno:v1.17.1
+reg.kyverno.io/kyverno/background-controller:v1.17.1=background-controller:v1.17.1
+reg.kyverno.io/kyverno/cleanup-controller:v1.17.1=cleanup-controller:v1.17.1
+reg.kyverno.io/kyverno/reports-controller:v1.17.1=reports-controller:v1.17.1
+
