@@ -16,12 +16,6 @@ jobs:
     - name: Login to Alibaba Cloud Registry
       run: echo "${{ secrets.ALIYUN_PASSWORD }}" | docker login -u ${{ secrets.ALIYUN_USERNAME }} --password-stdin registry.cn-hangzhou.aliyuncs.com
 
-    - name: Install crane for OCI artifacts
-      run: |
-        CRANE_VERSION="0.19.2"
-        curl -fsSL "https://github.com/google/crane/releases/download/v${CRANE_VERSION}/crane_${CRANE_VERSION}_linux_amd64.tar.gz" | tar -xzf - -C /usr/local/bin crane
-        crane version
-
     - name: Pull and Push Images
       run: |
         # 读取 images.txt 中的镜像列表，格式: 源镜像名=目标镜像名(可选)
@@ -57,18 +51,9 @@ jobs:
           echo "目标镜像: registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
           echo "========================================"
 
-          # 判断是否使用 crane（ghcr.io 上的 OCI artifact）
-          if [[ "$source_image" == ghcr.io/* ]]; then
-            echo "[crane] Pulling OCI artifact: $source_image"
-            crane pull "$source_image" /tmp/artifact.tar
-            echo "[crane] Pushing OCI artifact to aliyun..."
-            crane push /tmp/artifact.tar "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
-          else
-            # 普通 Docker 镜像
-            docker pull "$source_image"
-            docker tag "$source_image" "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
-            docker push "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
-          fi
+          docker pull "$source_image"
+          docker tag "$source_image" "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
+          docker push "registry.cn-hangzhou.aliyuncs.com/zhangjinhui/$target_image"
 
           echo "镜像 $source_image 处理完成"
           echo ""
