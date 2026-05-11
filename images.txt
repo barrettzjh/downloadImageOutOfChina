@@ -1,2 +1,1 @@
-# 本次下载镜像列表 - 2026-05-11 14:24
-falcosecurity/rules/falco-rules:5=falco-rules:5
+ghcr.io/falcosecurity/rules/falco-rules:5=falco-rules:5
