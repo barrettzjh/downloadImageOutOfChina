@@ -35,9 +35,9 @@ jobs:
             target_image="$line"
           fi
           
-          # 去除前后空格
-          source_image=$(echo "$source_image" | xargs)
-          target_image=$(echo "$target_image" | xargs)
+          # 去除前后空格和 Windows 行尾 \r
+          source_image=$(echo "$source_image" | xargs | tr -d '\r')
+          target_image=$(echo "$target_image" | xargs | tr -d '\r')
           
           # 提取镜像名（去掉命名空间前缀）
           # 例如: labring/kubernetes-docker:v1.29.5-arm64 → kubernetes-docker:v1.29.5-arm64
