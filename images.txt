@@ -1,3 +1,6 @@
-falcosecurity/falcosidekick:2.32.0=falcosidekick:2.32.0
-redis/redis-stack:7.2.0-v11=redis-stack:7.2.0-v11
-falcosecurity/falcosidekick-ui:2.2.0=falcosidekick-ui:2.2.0
+# 本次下载镜像列表 - 2026-05-12 09:17:20
+neuvector/manager:5.4.3
+neuvector/controller:5.4.3
+neuvector/enforcer:5.4.3
+neuvector/scanner:latest
+neuvector/updater:latest
