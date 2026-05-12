@@ -1,4 +1,1 @@
-neuvector/controller:5.5.1
-neuvector/enforcer:5.5.1
-neuvector/manager:5.5.1
-neuvector/scanner:6
+neuvector/updater:0.0.10
