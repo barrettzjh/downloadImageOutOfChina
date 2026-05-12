@@ -1,5 +1,5 @@
 neuvector/manager:5.4.6
 neuvector/controller:5.4.6
 neuvector/enforcer:5.4.6
-neuvector/scanner:5.4.6
-neuvector/updater:5.4.6
+neuvector/scanner:latest
+neuvector/updater:latest
