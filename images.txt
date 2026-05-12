@@ -1,6 +1,5 @@
-# 本次下载镜像列表 - 2026-05-12 09:17:20
-neuvector/manager:5.4.3
-neuvector/controller:5.4.3
-neuvector/enforcer:5.4.3
-neuvector/scanner:latest
-neuvector/updater:latest
+neuvector/manager:5.4.6
+neuvector/controller:5.4.6
+neuvector/enforcer:5.4.6
+neuvector/scanner:5.4.6
+neuvector/updater:5.4.6
