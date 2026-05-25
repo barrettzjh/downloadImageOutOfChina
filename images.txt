@@ -1,1 +1,1 @@
-neuvector/updater:0.0.10
+nginx:1.31.1
