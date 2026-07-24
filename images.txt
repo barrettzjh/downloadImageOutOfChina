@@ -1,3 +1,1 @@
-apache/apisix:3.16.0=apisix:3.16.0
-bitnami/etcd:3.5=etcd:3.5
-apache/apisix-ingress-controller:1.10.0=apisix-ingress-controller:1.10.0
+alibabadragonwell/dragonwell:21-alinux=dragonwell:21-alinux
