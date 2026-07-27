@@ -1,1 +1,1 @@
-alibabadragonwell/dragonwell:17-alinux=dragonwell:17-alinux
+dhi.io/maven:3-jdk17-alpine-dev=maven:3-jdk17-alpine-dev
