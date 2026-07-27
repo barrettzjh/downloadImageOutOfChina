@@ -1,1 +1,1 @@
-alibabadragonwell/dragonwell:21-alinux=dragonwell:21-alinux
+alibabadragonwell/dragonwell:17-alinux=dragonwell:17-alinux
