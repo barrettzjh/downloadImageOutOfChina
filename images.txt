@@ -1,1 +1,1 @@
-dhi.io/maven:3-jdk17-alpine-dev=maven:3-jdk17-alpine-dev
+maven:3-eclipse-temurin-17-alpine
