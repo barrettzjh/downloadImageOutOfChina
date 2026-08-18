@@ -1,1 +1,1 @@
-registry.k8s.io/metrics-server/metrics-server:v0.9.0=metrics-server:v0.9.0
+openbao/openbao:2.6.1=openbao:2.6.1
