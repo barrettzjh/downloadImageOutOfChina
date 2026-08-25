@@ -1,1 +1,1 @@
-openbao/openbao:2.6.1=openbao:2.6.1
+nginx:1.31.4
