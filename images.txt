@@ -1,1 +1,1 @@
-gitlab/gitlab-runner:alpine-v17.11.5=gitlab-runner-alpine:17.11.5
+gitlab/gitlab-runner:alpine-v17.11.4=gitlab-runner-alpine:17.11.4
