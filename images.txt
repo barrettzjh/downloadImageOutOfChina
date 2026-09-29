@@ -1,3 +1,2 @@
-timescale/timescaledb:latest-pg16=timescaledb:latest-pg16
-redis:7-alpine
-mailhog/mailhog:latest=mailhog:latest
+logtide/backend:latest=logtide-backend:latest
+logtide/frontend:latest=logtide-frontend:latest
