@@ -1,1 +1,3 @@
-gitlab/gitlab-runner:alpine-v17.11.4=gitlab-runner-alpine:17.11.4
+timescale/timescaledb:latest-pg16=timescaledb:latest-pg16
+redis:7-alpine
+mailhog/mailhog:latest=mailhog:latest
